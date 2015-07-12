@@ -5,8 +5,8 @@ var notify = require('gulp-notify');
 // Start the server
 gulp.task('watch', function() {
   gulp.watch([
-    'public/javascripts/**/*.js',
-    '!public/javascripts/**/all.js',
-    '!public/javascripts/**/all.min.js'], ['scripts-complexity', 'scripts']);
+    'public/js/**/*.js',
+    '!public/js/**/all.js',
+    '!public/js/**/all.min.js'], ['scripts-complexity', 'scripts']);
   gulp.watch('public/sass/**/*.scss', ['styles']);
 });  

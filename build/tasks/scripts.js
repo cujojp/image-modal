@@ -10,10 +10,10 @@ var notify = require('gulp-notify');
 gulp.task('scripts-complexity', function() {
   gulp.src([
     './public/js/**/*.js',
-    '!./public/js/libs/*.js',
+    '!./public/js/**/*-settings.js',
+    '!./public/js/lib/*.js',
     '!./public/js/all.js',
-    '!./public/js/all.min.js',
-    '!./public/js/**/settings.js',
+    '!./public/js/all.min.js'
   ])
   .pipe( plumber( { errorHandler: handleErrors } ) )
   .pipe(complexity({
