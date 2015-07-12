@@ -1,1 +1,1 @@
-//= include_tree ../modules/
+//= include ../modules/**/index.js
