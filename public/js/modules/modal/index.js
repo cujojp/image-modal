@@ -70,10 +70,14 @@
     this._init();
   };
 
+  
+
+  /** @enum {string} */
   Modal.Events = {
     CLICK: 'click',
   };
 
+  /** @enum {string} */
   Modal.Selectors = {
     APP: 'app',
     TOGGLE: 'modal-toggle',
@@ -107,22 +111,101 @@
   Modal.prototype._initalizeBindings = function() {
     this._$toggle.on(
       Modal.Events.CLICK,
-      $.proxy(this._handleTrigger, this));
+      $.proxy(this._toggleModal, this));
 
   };
 
   /**
-   * _handleTrigger
+   * _toggleModal
    * Will handle click events for when the trigger is clicked.
    *
    * @param {Object} evt event object
    * @private
    */
-  Modal.prototype._handleTrigger = function(evt) {
+  Modal.prototype._toggleModal = function(evt) {
 
-    console.log('click');
+    // set if the modal is active versus not.
+    this._isActive = !this._isActive;
+
+    if (this._isActive) {
+      this._openModal();
+    } else {
+      this._closeModal();
+    }
 
   };
+
+  /**
+   * _openModal
+   * Will open and display the modal based on if 
+   * its active.
+   *
+   * @private
+   */
+  Modal.prototype._openModal = function() {
+    console.log('this._openModal');
+
+    this._createOverlay();
+    this._createModalBindings();
+    this._$el.removeClass(
+      Modal.Selectors.DISABLED);
+
+  };
+
+  /**
+   * _closeModal
+   * Will close and hide the modal based on
+   * if its active.
+   *
+   * @private
+   */
+  Modal.prototype._closeModal = function() {
+    console.log('this._closeModal');
+    this._$el.addClass (
+      Modal.Selectors.DISABLED);
+
+  };
+
+  /**
+   * _createOverlay
+   * Will create an overlay instance on the app.
+   *
+   * @private
+   */
+  Modal.prototype._createOverlay = function() {
+
+  };
+
+  /**
+   * _destroyOverlay
+   * Will destroy the overlay elements within the app.
+   *
+   * @private
+   */
+  Modal.prototype._destroyOverlay = function() {
+
+  };
+
+  /**
+   * _createModalBindings
+   * Creates bindings specifically to the modal element.
+   *
+   * @private
+   */
+  Modal.prototype._createModalBindings = function() {
+
+  };
+
+  /**
+   * _destroyModalBindings
+   * Will destroy the bindings to the modal elements.
+   *
+   * @private
+   */
+  Modal.prototype._destroyModalBindings = function() {
+
+  };
+  
 
   // quickly instaniate the Module class.
   app._Modules.Modal = module;
