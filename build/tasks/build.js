@@ -1,3 +1,3 @@
 var gulp = require('gulp');
 
-gulp.task('build', ['svg', 'scripts', 'styles']);
+gulp.task('build', ['scripts', 'styles']);
