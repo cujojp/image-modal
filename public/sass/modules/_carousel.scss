@@ -69,11 +69,15 @@
     width: 64px;
     border-radius: 100%;
     background: rgba($black, .5);
-    transition: background 200ms ease-out;
+    transition: background 200ms ease-out, opacity 200ms ease-out;
 
     &:hover {
       background: rgba($black, .8);
     }
+  }
+
+  .pagination--disabled {
+    opacity: 0;
   }
 
   .pagination--prev {

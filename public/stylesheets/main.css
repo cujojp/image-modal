@@ -218,10 +218,12 @@ table {
     width: 64px;
     border-radius: 100%;
     background: rgba(0, 0, 0, 0.5);
-    -webkit-transition: background 200ms ease-out;
-            transition: background 200ms ease-out; }
+    -webkit-transition: background 200ms ease-out, opacity 200ms ease-out;
+            transition: background 200ms ease-out, opacity 200ms ease-out; }
     .carousel__pagination .pagination:hover {
       background: rgba(0, 0, 0, 0.8); }
+  .carousel__pagination .pagination--disabled {
+    opacity: 0; }
   .carousel__pagination .pagination--prev {
     left: 15px; }
   .carousel__pagination .pagination--next {
