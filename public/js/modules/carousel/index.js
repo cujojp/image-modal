@@ -172,8 +172,6 @@
    * @private
    */
   Carousel.prototype._initializeCarouselBindings = function() {
-    console.log(this._$nextToggle);
-
     this._$previousToggle.on(
       Carousel.Events.CLICK,
       $.proxy(this._previousSlide, this));
@@ -181,7 +179,6 @@
     this._$nextToggle.on(
       Carousel.Events.CLICK,
       $.proxy(this._nextSlide, this));
-
   };
 
   /**
