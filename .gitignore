@@ -17,6 +17,8 @@ coverage
 .grunt
 .DS_Store
 **/.config.js
+all.js
+all.min.js
 
 # node-waf configuration
 .lock-wscript
