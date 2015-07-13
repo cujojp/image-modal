@@ -65,8 +65,6 @@
      */
     this._isActive = false;
 
-
-
     this._init();
   };
 
