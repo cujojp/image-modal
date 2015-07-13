@@ -1,5 +1,8 @@
 /**
- * @fileoverview Module Information
+ * @fileoverview The carousel file will load data via Flickr and
+ * create a carousel with the data. The slides are generated via
+ * this class and appended within the carousel wrapper element.
+ *
  * @author Kaleb White
  */
 (function($) {
@@ -147,7 +150,7 @@
    * _init
    * initializes the carousel module.
    *
-   * @return
+   * @private
    */
   Carousel.prototype._init = function() {
     this._getPhotoArray();
@@ -219,7 +222,7 @@
    * This will be used to populate the carousel with slides.
    *
    * @param {Array} arr // image array
-   * @return
+   * @private
    */
   Carousel.prototype._populateImageObject = function(arr) {
     var i = 0;
@@ -245,6 +248,7 @@
    *
    * @param {Object} image
    * @return {string}
+   * @private
    */
   Carousel.prototype._getImageURI  = function(image) {
     var uri = Carousel.Data.IMAGE_URI

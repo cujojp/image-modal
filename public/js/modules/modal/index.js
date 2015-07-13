@@ -1,5 +1,9 @@
 /**
- * @fileoverview Module Information
+ * @fileoverview The Modal class saves the outputted DOM
+ * as a doucment fragment when the modal is instantiated.
+ * Then it will append the fragment to the bottom of the 
+ * document when instantiated.
+ *
  * @author Kaleb White
  */
 (function($) {
