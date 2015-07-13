@@ -142,7 +142,7 @@
 
   /** @enum {string} */
   Carousel.Data = {
-    FLICKR_API: 'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0e3c9488e9e921a3f5de479c26605293&photoset_id=72157626579923453&format=json&nojsoncallback=1',
+    FLICKR_API: 'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=3dbee32548f1cd079ca529cd35388b9c&photoset_id=72157626579923453&format=json&nojsoncallback=1',
     IMAGE_URI: 'https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}_b.jpg',
   };
   
