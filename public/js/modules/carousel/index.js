@@ -134,7 +134,7 @@
     TOGGLE_PREV: 'pagination--prev',
     ACTIVE_SLIDE: 'slide--active',
     TITLE_WRAP: 'carousel__title-wrap',
-    TITLE: 'image-title',
+    TITLE: 'carousel__title',
   };
 
   /** @enum {string} */

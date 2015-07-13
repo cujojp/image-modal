@@ -33,9 +33,25 @@
 
   background: {
     position: center;
-    size: contain;
+    size: cover;
     repeat: no-repeat;
   }
+}
+
+.carousel__title-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background: rgba($black, .5);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.carousel__title {
+  color: $gray90;
+  font-size: 12px;
 }
 
 .carousel__pagination {
