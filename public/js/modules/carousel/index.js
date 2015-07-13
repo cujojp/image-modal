@@ -140,7 +140,7 @@
   /** @enum {string} */
   Carousel.Data = {
     FLICKR_API: 'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=0e3c9488e9e921a3f5de479c26605293&photoset_id=72157626579923453&format=json&nojsoncallback=1',
-    IMAGE_URI: 'https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg',
+    IMAGE_URI: 'https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}_b.jpg',
   };
   
   /**
@@ -362,7 +362,6 @@
 
     this._currentSlideIndex = index;
   };
-
 
   /**
    * _getPossibleIndex

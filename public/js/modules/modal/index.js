@@ -113,7 +113,7 @@
     APP: 'app',
     TOGGLE: 'modal-toggle',
     BASE: 'modal',
-    OVERLAY:'modal-overlay',
+    OVERLAY:'modal__overlay',
     MODAL_INNER:'modal__inner',
     WRAP: 'modal--wrapper',
     DISABLED: 'modal--disabled',

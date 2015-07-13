@@ -15,14 +15,15 @@
   max-width: 100%;
   max-height: 100%;
   margin: 0;
-  z-index: 120;
+  z-index: 120;      
+  background: $black;
 }
 
 .modal.modal--disabled {
   display: none;
 }
 
-.modal-overlay {
+.modal__overlay {
   position: fixed;
   top: 0;
   left: 0;
